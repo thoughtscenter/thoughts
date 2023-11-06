@@ -500,17 +500,31 @@ header .book:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home .content  .properties {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.home .content  .properties >  div{
+  height: 350px;
 }
 
 
 
-.people {
+.home .content  .people {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.people .text {
+.home .content .people .text {
   text-align: center;
   margin: 0 10px;
   /* Add margin for spacing between the first two text divs */
