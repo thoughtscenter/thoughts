@@ -1,525 +1,1090 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE" edge="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مركز إرتقاء الأفكار للإرشاد الاسري</title>
-    <link rel="icon" href="images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&amp;display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <meta name="description"
-        content="مركز إرتقاء الأفكار للإرشاد الاسري - استشارات نفسية في المملكة العربية السعودية. نحو استقرار الأسرة وازدهار المجتمع.">
-    <meta name="keywords" content="
-مركز إرشاد نفسي,
- إرشاد أسري, إرشاد للمراهقين, إرشاد لذوي الاحتياجات الخاصة, إرشاد للباحثين, خدمات إرشاد نفسي, استشارات نفسية, مساعدة نفسية, مشكلات نفسية, تطوير الذات, تحسين العلاقات الأسرية,
- التوجيه النفسي, الصحة النفسية, مركز إرشاد للعائلات, مساعدة في حالات الضغط النفسي,
- الاستشارات الأسرية, إرشاد الزواج, دعم نفسي للأطفال, تطوير مهارات التفكير,
- العلاج النفسي ,مركز الارتقاء و ارتقاء الافكار">
-    <meta name="robots" content="max-image-preview:large">
-    <link rel="canonical" href="">
-    <meta name="generator" content="All in One SEO Pro (AIOSEO) 4.4.2">
-    <meta property="og:locale" content="ar_AR">
-    <meta property="og:site_name"
-        content="مركز إرتقاء الأفكار للإرشاد الاسري - استشارات نفسية في المملكة العربية السعودية">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="مركز إرتقاء الأفكار للإرشاد الاسري - استشارات نفسية في المملكة العربية السعودية">
-    <meta property="og:description" content="نحو استقرار الأسرة وازدهار المجتمع.">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta property="og:image:secure_url" content="">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title"
-        content="مركز إرتقاء الأفكار للإرشاد الاسري - استشارات نفسية في المملكة العربية السعودية">
-    <meta name="twitter:description" content="نحو استقرار الأسرة وازدهار المجتمع.">
-    <meta name="twitter:image" content="">
-</head>
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+li {
+  font-size: 1rem;
+  list-style: none;
+}
 
 
-<body>
-    <div id="loading-container">
-        <span class="loader"></span>
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
 
-    </div>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="">
-            </div>
-            <nav>
-                <li class="active"><a href="#home">الرئيسية</a></li>
-                <li><a href="#about">من نحن</a></li>
-                <li><a href="#specialists">المختصين</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
-            </nav>
-            <a href="https://iwtsp.com/966530803023" class="book">أحجز موعدك الان</a>
-            <div class="menu">
-                <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
-                <div class="menu-list">
-                    <li class="active"><a href="#home">الرئيسية</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#specialists">المختصين</a></li>
-                    <li><a href="#contact">تواصل معنا</a></li>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section class="home" id="#home">
-        <div class="container">
-            <div class="hero">
-                <div class="heading">
-                    <h3 class="none">
-                        معاً لنرتقي بمحيطنا
-                    </h3>
+:root {
+  --main-color: #397ABE;
+  --alt-color: #4d86be;
+  --text-color: #2E3842;
+  --text2-color: #000;
+  --white: #fff;
+}
 
-                </div>
-                <p>مركز ارشاد نوعي يتبنى المفهوم الارشادي بكافة جوانبه وذلك من خلال المجالات ذات العلاقة بتحسين
-                    جودة حياة الفرد للافراد العاديين وذوي الاعاقة وذلك من خلال خدمات مستندة في اساسها على تدخلات
-                    مستندة على
-                    الادلة والبراهين وبسرية تامة، عبر كوادر مهنية ذات كفاءة عالية وخبرات مميزة </p>
-                <div class="services">
-                    <div class="titles animate-up">
-                        <h2>الخدمات المقدمة</h2>
-                    </div>
-                    <div class="cont">
-                        <div class=" service animate-right">
-                            <div class="icon">
-                                <i class="fa-solid fa-person-chalkboard"></i>
-                            </div>
-                            <div class="title">
-                                <h3>خدمات ارشادية</h3>
-                            </div>
-                        </div>
-                        <div class="service animate-left">
-                            <div class="icon">
-                                <i class="fa-solid fa-street-view"></i>
-                            </div>
-                            <div class="title">
-                                <h3>خدمات توجيهية</h3>
-                            </div>
-                        </div>
 
-                    </div>
-                    <div class="fields-container">
-                        <div class="field animate-right">
-                            <div class="icon">
-                                <img src="images/family.png" alt="">
-                            </div>
-                            <div class="title">
-                                <h3>الاستشارات الأسرية</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-left">
-                            <div class="icon"><img src="images/therapy.png" alt=""></div>
-                            <div class="title">
-                                <h3>العلاج النفسي</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-right">
-                            <div class="icon"><img src="images/person.png" alt=""></div>
-                            <div class="title">
-                                <h3>الاستشارات الفردية</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-left ">
-                            <div class="icon"><img src="images/children.png" alt=""></div>
-                            <div class="title">
-                                <h3>استشارات الاطفال</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-right">
-                            <div class="icon"><img src="images/workshop.png" alt=""></div>
-                            <div class="title">
-                                <h3> ورش العمل</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-left">
-                            <div class="icon"><img src="images/couple.png" alt=""></div>
-                            <div class="title">
-                                <h3>الاستشارات الزوجية</h3>
-                            </div>
-                        </div>
+#loading-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 98989898;
+  padding: 0;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
 
-                        <div class="field  animate-right">
-                            <div class="icon"><img src="images/support.png" alt=""></div>
-                            <div class="title">
-                                <h3>التوجيه الفني</h3>
-                            </div>
-                        </div>
+.loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: var(--text-color);
+}
 
-                        <div class="field  animate-left">
-                            <div class="icon"><img src="images/dsiabled.png" alt=""></div>
-                            <div class="title">
-                                <h3>خدمات علاجية لذوي الإعاقة</h3>
-                            </div>
-                        </div>
-                        <div class="field  animate-right">
-                            <div class="icon"><img src="images/improve.png" alt=""></div>
-                            <div class="title">
-                                <h3>التطوير</h3>
-                            </div>
-                        </div>
-                        <div class="field  animate-left">
-                            <div class="icon"><img src="images/educate.png" alt=""></div>
-                            <div class="title">
-                                <h3>التوجيه والتثقيف</h3>
-                            </div>
-                        </div>
-                        <div class="field  animate-right">
-                            <div class="icon"><img src="images/research.png" alt=""></div>
-                            <div class="title">
-                                <h3>البحث العلمي</h3>
-                            </div>
-                        </div>
-                        <div class="field  animate-left">
-                            <div class="icon"><img src="images/dsiabled.png" alt=""></div>
-                            <div class="title">
-                                <h3>خدمات تقييمية لذوي الإعاقة</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="fields">
-                    <div class="titles animate-up">
-                        <h2>المجالات الخاصة بنا</h2>
-                    </div>
-                    <div class="fields-container">
-                        <div class="field animate-right">
-                            <div class="icon">
-                                <img src="images/family.png" alt="">
-                            </div>
-                            <div class="title">
-                                <h3>المجال الأسري</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-right">
-                            <div class="icon">
-                                <img src="images/therapy.png" alt="">
-                            </div>
-                            <div class="title">
-                                <h3>المجال النفسي</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-right">
-                            <div class="icon">
-                                <img src="images/adaption.png" alt="">
-                            </div>
-                            <div class="title">
-                                <h3>المجال التربوي</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-right">
-                            <div class="icon">
-                                <img src="images/educate.png" alt="">
-                            </div>
-                            <div class="title">
-                                <h3>المجال السلوكي</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-right">
-                            <div class="icon">
-                                <img src="images/research.png" alt="">
-                            </div>
-                            <div class="title">
-                                <h3>المجال البحثي</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-right">
-                            <div class="icon">
-                                <img src="images/workshop.png" alt="">
-                            </div>
-                            <div class="title">
-                                <h3>المجال التدريبي</h3>
-                            </div>
-                        </div>
-                        <div class="field animate-right">
-                            <div class="icon">
-                                <img src="images/community.png" alt="">
-                            </div>
-                            <div class="title">
-                                <h3>المجال المجتمعي</h3>
-                            </div>
-                        </div>
-                    </div>
+.loader:before,
+.loader:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1s spin linear infinite;
+}
 
-                </div>
-                <div class="content">
+.loader:after {
+  color: var(--main-color);
+  transform: rotateY(70deg);
+  animation-delay: .4s;
+}
 
-                    <div class="texts">
-                        <div class="properties">
-                            <div class="text animate-right">
-                                <div class="title">
-                                    <img src="images/ethics.svg" alt="">
-                                    <h4>قيمنا</h4>
-                                </div>
-                                <ul>
-                                    <li>الجودة</li>
-                                    <li>الالتزام بأخلاقيات المهنة</li>
-                                    <li>التعاون</li>
-                                    <li>التعلم المستمر</li>
-                                    <li>التوجيه والدعم</li>
-                                </ul>
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
 
-                            </div>
-                            <div class="text animate-left">
-                                <div class="title">
-                                    <img src="images/features.svg" alt="">
-                                    <h4>ما يميزنا</h4>
-                                </div>
-                                <ul>
-                                    <li>التوجه الشامل</li>
-                                    <li>التواصل الفعال</li>
-                                    <li>خبراتنا العلمية والعملية</li>
-                                    <li>شغف الارتقاء</li>
-                                </ul>
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
 
-                            </div>
-                        </div>
-                        <div class="titles">
-                            <h2>الفئات المستهدفة</h2>
-                        </div>
-                        <div class="people">
-                            <div class="text animate-right">
-                                <div class="icon">
-                                    <img src="images/normals.png" alt="">
-                                </div>
-                                <h3>العاديين</h3>
-                                <ul>
-                                    <li>اطفال</li>
-                                    <li>مراهقين</li>
-                                    <li>بالغين</li>
-                                    <li>مسنين</li>
-                                </ul>
-                            </div>
-                            <div class="text dis animate-up">
-                                <div class="icon">
-                                    <img src="images/disabled-pep.png" alt="">
-                                </div>
-                                <h3>ذوي الاعاقة</h3>
-                                <ul>
-                                    <li>اضطراب طيف التوحد ASD</li>
-                                    <li>لاضطرابات النمائية D.D</li>
-                                    <li>لاضطرابات السلوكية B.D</li>
-                                    <li>اضطراب فرط الحركة ADHD</li>
-                                    <li>اضطرابات النطق واللغة SLD</li>
-                                    <li>التخلف العقلي I.D</li>
-                                    <li> صعوبات التعلم L.D</li>
-                                </ul>
-                            </div>
+@keyframes rotateccw {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
 
-                            <div class="text animate-left">
-                                <div class="icon">
-                                    <img src="images/interested.png" alt="">
-                                </div>
-                                <h3>المهتمين</h3>
-                                <ul>
-                                    <li>باحثين</li>
-                                    <li>مخصتين</li>
-                                    <li>أسر</li>
-                                </ul>
-                            </div>
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
 
-                        </div>
+@keyframes spin {
 
-                    </div>
-                </div>
-            </div>
+  0%,
+  100% {
+    box-shadow: .2em 0px 0 0px currentcolor;
+  }
 
-    </section>
-    <section class="about" id="about">
-        <div class="container">
-            <div class="who animate-up">
+  12% {
+    box-shadow: .2em .2em 0 0 currentcolor;
+  }
 
-                <h2>
-                    من نحن
-                </h2>
-                <div class="image">
-                    <img src="images/who.png" alt="">
-                </div>
-                <p>مركز إرشادي مهتم في تحسين جودة الحياة للأفراد العاديين وذوي الإعاقة من خلال ما يلي: ​
-                </p>
-                <ul>
-                    <li>تعزيز مفاهيم الصحة النفسية وبناء أسس تربوية راسخة للمنظومة الأسرية. </li>
-                    <li>تدريب وتأهيل المختصين لتجويد الخدمات. </li>
-                    <li>إثراء المكتبة العلمية بمنتجات علمية محكمة حديثة لتوجهات حديثة وفعالة للفرد والمجتمع بكافة
-                        اطيافه.</li>
-                </ul>
-            </div>
-            <div class="info text">
-                <div class="vision animate-left">
-                    <h2>رُؤيتنا</h2>
-                    <div class="image">
-                        <img src="images/vision.png" alt="">
-                    </div>
-                    <p>الريادة والمرجعية في الخدمات الداعمة والتوعوية للمنظومة الأسرية والمجتمعية ذات الأسس الراسخة
-                        وتعزيز العلاقات الأسرية الصحية من خلال توجيه الخدمات الإرشادية ذات العلاقة عبر ممارسات مستندة
-                        على الأدلة والبراهين. </p>
-                </div>
-                <div class="goals animate-right">
-                    <h2>
-                        الهدف
-                    </h2>
-                    <div class="image">
-                        <img src="images/goal.png" alt="">
-                    </div>
-                    <p> تعزيز التوازن بين الحياة العائلية والاحتياجات الفردية عبر تقديم الإرشاد والتوجيه الفردي
-                        والجماعي
-                        للأسر ومقدمي الرعاية والمختصين وإثراء الجانب العلمي بمنتجات علمية محكمة مما يساهم بالوصول
-                        للتكامل والتفاعل المجتمعي الفعال.</p>
+  25% {
+    box-shadow: 0 .2em 0 0px currentcolor;
+  }
 
-                </div>
-                <div class="message animate-left">
-                    <h2>الرسالة</h2>
-                    <div class="image">
-                        <img src="images/message.png" alt="">
-                    </div>
-                    <p>تحسين جودة الحياة للفرد من خلال توفير بيئة آمنة وداعمة للأسر وتجويد الخدمات المقدمة من قبل
-                        المختصين، وتقديم الدعم الاستشاري والتوجيه لتعزيز الصحة النفسية والرفاهية الأسرية وتذليل
-                        التحديات المختلفة التي تواجهها.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="specialists">
-        <div class="container">
-            <div class="titles animate-up heading">
-                <h2>المختصين</h2>
-                <p>
-                    يضم مركز ارتقاء الافكار للارشاد الاسري كوادر فنيه مميزه تساهم بتجويد المخرجات وتنفيذ تدخلات علاجية
-                    مستندة على اساس علمي راسخ وذلك من خلال خبرات مختصينا العملية والنوعية ومؤهلاتهم العلمية التي تمتاز
-                    بالتخصصية.
-                </p>
-            </div>
-            <div class="swiper">
-                <div class="swiper-container animate-up">
-                    <div class="swiper-wrapper">
+  37% {
+    box-shadow: -.2em .2em 0 0 currentcolor;
+  }
 
-                    </div>
+  50% {
+    box-shadow: -.2em 0 0 0 currentcolor;
+  }
 
-                    <div class="prev">
-                        <i class="fa-solid fa-angle-left"></i>
-                    </div>
-                    <div class="next">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <div class="contact-us animate-up ">
-                <div class="left-side">
-                    <h2>تواصل معنا الآن</h2>
+  62% {
+    box-shadow: -.2em -.2em 0 0 currentcolor;
+  }
 
-                    <ul class="info">
-                        <li><i class="fa-solid fa-envelope"></i>Artqalaa@gmail.com </li>
-                        <li><i class="fa-solid fa-phone"></i>0530803023</li>
-                    </ul>
+  75% {
+    box-shadow: 0px -.2em 0 0 currentcolor;
+  }
 
-                    <div class="icons"> <a href="https://twitter.com/thoughtsCenter"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a href="https://www.tiktok.com/@thoughtscenter?_t=8h257fVeaZe&amp;_r=1"><i
-                                class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://www.snapchat.com/add/thoughtscenter"><i class="fa-brands fa-snapchat"></i></a>
-                        <a href="https://iwtsp.com/966530803023"><i class="fa-brands fa-whatsapp"></i></a>
-                    </div>
+  87% {
+    box-shadow: .2em -.2em 0 0 currentcolor;
+  }
+}
 
-                </div>
-                <div class="right-side">
-                    <form action="/send-message" method="post">
-                        <label for="name">الاسم:</label>
-                        <input type="text" id="name" name="name" required>
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 
-                        <label for="email">الايميل:</label>
-                        <input type="email" id="email" name="email" required>
+section {
+  padding: 40px 0;
+}
 
-                        <label for="subject">العنوان:</label>
-                        <input type="text" id="subject" name="subject" required>
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 
-                        <label for="message">الرسالة:</label>
-                        <textarea id="message" name="message" required></textarea>
+header {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
-                        <button type="submit">ارسال</button>
-                    </form>
-                </div>
-            </div>
-            <div class="map animate-up">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2764.4333493586632!2d42.70923203609128!3d18.290450134048566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15fb598864267a45%3A0x2e7782cbbca2add6!2z2YXYsdmD2LIg2KXYsdiq2YLYp9ihINin2YTYp9mB2YPYp9ixINmE2YTYpdix2LTYp9ivINin2YTYo9iz2LHZiiDZiNin2YTZhtmB2LPZiiDZiNin2YTYqtix2KjZiNmKLg!5e0!3m2!1sar!2seg!4v1699001121445!5m2!1sar!2seg"
-                    style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="bg-img">
-            <img src="images/wave (2).svg" alt="" class="bg-image">
-        </div>
-        <div class="container">
-            <div class="media">
-                <a href="#">
-                    معنا نحو استقرار الاسرة <span>وازدهار المجتمع</span>
-                </a>
-                <div class="icons">
-                    <a href="https://twitter.com/thoughtsCenter"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.tiktok.com/@thoughtscenter?_t=8h257fVeaZe&amp;_r=1"><i
-                            class="fa-brands fa-tiktok"></i></a>
-                    <a href="https://www.snapchat.com/add/thoughtscenter"><i class="fa-brands fa-snapchat"></i></a>
-                    <a href="https://iwtsp.com/966530803023"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="links">
-                <div class="logo"> <img src="images/logo.png" alt=""></div>
-                <ul>
-                    <h3><a href="#about">من نحن</a></h3>
-                    <li><a href="#about">قصتنا</a></li>
-                    <li><a href="#about">طموحنا</a></li>
-                </ul>
-                <ul>
-                    <h3><a href="#about">الصحفات القانونية</a></h3>
-                    <li><a href="#about">الشروط والأحكام</a></li>
-                    <li><a href="#about">سياسة الخصوصية</a></li>
-                </ul>
-                <ul>
-                    <h3><a href="#contact">تواصل معنا</a></h3>
-                    <li><a href="#contact">Artqalaa@gmail.com</a></li>
-                    <li><a href="#contact">0530803023</a></li>
-                </ul>
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
 
-            </div>
-        </div>
-    </footer>
-    <div class="credits">
-        مرخص من وزارة الموار البشرية والتنمية الاجتماعية برقم : 230400002742
-    </div>
-    <script src="script.js"></script>
-    <script src="bootstrap.bundle.min.js"></script>
+header .container .logo img {
+  width: 100px;
+}
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+header .menu {
+  position: relative;
+  display: none;
+}
 
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto', // Show as many slides as fit the container width
-            spaceBetween: 0, // Add some spacing between slides if needed
-            navigation: {
-                nextEl: '.next',
-                prevEl: '.prev',
-            },
-        });
-    </script>
-</body>
+header .menu-icon {
+  color: var(--main-color);
+  font-size: 1.2rem;
+}
 
-</html>
+header .menu-list {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--text-color);
+  text-align: right;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+header .menu-list li {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  padding: 10px 15px;
+  border: .3px solid var(--white);
+}
+
+header .menu-list li:hover {
+  background-color: var(--white);
+
+  border-color: var(--text-color);
+}
+
+header .menu-list li:hover a {
+  color: var(--text-color);
+}
+
+header .menu-list a {
+  display: inline-block;
+  padding: 10px 10px;
+  width: 134px;
+  color: var(--white);
+  transition: 0.3s;
+}
+
+header .menu-list.open {
+  z-index: 999;
+  opacity: 1;
+  top: 60px;
+}
+
+header .container nav {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+
+}
+
+
+header .container nav li a {
+  padding: 0 10px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+header .container nav li a::after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  left: 0;
+  bottom: -10px;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+
+header .container nav li a:hover {
+  color: var(--text2-color);
+}
+
+header .container nav li a:hover::after {
+  transform: scaleX(1);
+}
+
+header .container nav li.active a::after {
+  transform: scaleX(1);
+}
+
+header .book {
+  color: var(--white);
+  background-color: var(--main-color);
+  padding: 1rem 1rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 1px solid var(--main-color);
+  font-size: 1rem;
+}
+
+header .book:hover {
+  background-color: var(--white);
+  color: var(--main-color);
+}
+
+
+.titles h2 {
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+
+.titles h3.none::before,
+.titles h3.none::after {
+  width: 0;
+  height: 0;
+}
+
+.titles h2:before {
+  width: 28px;
+  height: 6px;
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+}
+
+.titles h2:after {
+  width: 100px;
+  height: 1px;
+  display: block;
+  content: "";
+  position: absolute;
+  margin-top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 8888;
+
+  background-color: var(--alt-color);
+}
+
+.home .hero {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.home .hero .heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  background-color: #3979be83;
+  border-radius: 2rem;
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+}
+.home .hero  p{
+  font-size: 1.3rem;
+}
+.home .hero>p {
+  text-align: center;
+}
+
+.home .hero .heading h3 {
+  margin: 0;
+}
+
+.home .hero .fields,
+.home .hero .services {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+
+.home .hero .fields .fields-container h3 {
+  font-size: 1.3rem;
+}
+
+.home .hero .cont>div {
+  margin: 0 auto;
+
+}
+
+.home .hero .services .cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.home .hero h2 {
+  color: var(--text-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.home .hero h2:hover {
+  color: var(--main-color);
+}
+
+.home .fields-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  color: var(--main-color);
+}
+
+.home .hero .fields .fields-container {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.home .fields .cont {
+  border-bottom: 1px solid #ddd;
+}
+
+.home .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+
+.home .icon i {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.home .fields-container>div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+}
+
+.home .fields-container>div .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.home .fields-container>div .icon:hover {
+  transform: scale(1.1);
+}
+
+.home .fields-container>div .icon i {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+
+.home .services .cont .icon {
+  width: 120px;
+  height: 120px;
+}
+
+.home .services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: var(--text-color);
+}
+
+.home .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home .content .image {
+  flex-basis: 40%;
+}
+
+
+.home .content .image img {
+  width: 70%;
+}
+
+.home .content .texts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home .content  .properties {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.home .content  .properties >  div{
+  height: 350px;
+}
+
+
+
+.home .content  .people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .content .people .text {
+  text-align: center;
+  margin: 0 10px;
+  /* Add margin for spacing between the first two text divs */
+}
+
+.people .text.dis {
+  flex: 1;
+  /* Allow the third text div to take up available space */
+}
+
+
+
+.home .content .texts .people>div {
+  height: 338px;
+}
+
+.home .content .texts .people .dis {
+  height: auto;
+}
+
+.home .content .texts .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #3979be0a;
+  padding: 10px;
+  width: 300px;
+  align-items: center;
+  text-align: center;
+}
+
+.home .content .texts .text * {
+  margin: 0;
+}
+
+.home .content .texts .text .title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home .content .texts .text .title img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+.home .content .texts .text ul {
+  padding-left: 0;
+}
+
+.home .content .texts .text ul li {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+
+
+.home .content .texts>.text {
+  height: 380px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  background-color: #3979be10;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.who {
+  margin: 20px auto;
+  text-align: center;
+
+  border-bottom: 1px solid #36363613;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.who h2 {
+  font-size: 3.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.who h2:hover {
+  color: var(--alt-color);
+}
+
+.who p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.about .container .info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.about .container .text {
+  text-align: center;
+}
+
+.about .container .text>div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.about .container .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  height: 100px;
+  width: 100px;
+}
+
+
+.about .container .text p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+ul li {
+  font-size: 1.2rem;
+  line-height: 1.5;
+
+}
+
+.about .container .text h2 {
+  font-size: 4rem;
+  color: var(--main-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about .container .text h2:hover {
+
+  color: var(--alt-color);
+}
+
+
+
+#specialists .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+#specialists .container .heading h3 {
+  font-size: 3rem;
+}
+
+
+
+#specialists .container .heading p {
+
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 0 auto;
+
+  width: 50%;
+  margin-top: 20px;
+}
+
+#specialists .swiper-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+#specialists .swiper-slide .image {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#specialists .swiper-slide .image img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+#specialists .swiper-slide p {
+  font-size: .7rem;
+  color: #aaa;
+}
+
+
+.swiper {
+  position: relative;
+  width: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  /* Set your desired fixed width */
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide {
+  flex: 0 0 250px;
+  /* Set the same width as the container */
+}
+
+
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Background color for navigation buttons */
+  color: #fff;
+  /* Text color for navigation buttons */
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+}
+
+#contact .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-us {
+  width: 98%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.contact-us .right-side {
+  flex-basis: 60%;
+}
+
+.contact-us form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--text);
+  border-radius: 5px;
+}
+
+.contact-us label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--dark-text);
+}
+
+.contact-us input,
+.contact-us textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  color: var(--text);
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 5px var(--main-color);
+}
+
+.contact-us button[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us button[type="submit"]:hover {
+  background-color: #1d7dcc;
+}
+
+.left-side {
+  background-color: var(--main-color);
+  color: var(--white);
+  flex-basis: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-side h2 {
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.left-side p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: var(--white);
+}
+
+.left-side .info {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+  display: grid;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-side .info li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.left-side .info li i {
+  width: 25px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+
+.left-side .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-side .icons i {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+#contact .map {
+  width: 60%;
+  height: 300px;
+}
+
+
+
+#contact .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  margin-top: auto;
+  position: relative;
+  padding: 60px 0 20px 0;
+}
+
+footer .bg-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  transform: scale(1);
+}
+
+footer .bg-image {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+footer .container .media {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .container .media a {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer .container .media a span {
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+footer .container .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .container .icons a {
+  background-color: var(--main-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+footer .container .icons i {
+  color: var(--white);
+}
+
+footer .container .icons a:hover {
+  background-color: var(--alt-color);
+}
+
+
+footer .container .links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+footer .container .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+footer .container .links ul h3 a {
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+footer .container .links ul a {
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+
+footer .container .logo {
+  margin-left: auto;
+}
+
+footer .container .logo img {
+  width: 200px;
+}
+
+section {
+  height: auto;
+}
+
+
+@keyframes animate {
+  0% {
+    width: 0;
+
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-up {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 1s ease-out;
+}
+
+
+.animate-left {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: 1s ease-out;
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 1s ease-out;
+}
+
+.reset {
+  opacity: 1;
+  transform: translate(0);
+  transition: 1s ease-out;
+}
+
+.credits {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--text-color);
+  color: var(--white);
+}
