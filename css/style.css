@@ -358,7 +358,9 @@ header .book:hover {
   cursor: pointer;
   text-align: center;
 }
-
+.home .hero  p{
+  font-size: 1.3rem;
+}
 .home .hero>p {
   text-align: center;
 }
