@@ -112,3 +112,51 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('Error fetching data:', error);
         });
 });
+
+
+
+document.getElementById("message-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    var nameError = document.getElementById("name-error");
+    var emailError = document.getElementById("email-error");
+    var subjectError = document.getElementById("subject-error");
+    var messageError = document.getElementById("message-error");
+    var successMessage = document.getElementById("success-message");
+    var errorMessage = document.getElementById("error-message");
+
+    nameError.textContent = name === "" ? "Name is required." : "";
+    emailError.textContent = email === "" ? "Email is required." : "";
+    subjectError.textContent = subject === "" ? "Subject is required." : "";
+    messageError.textContent = message === "" ? "Message is required." : "";
+
+    if (name === "" || email === "" || subject === "" || message === "") {
+        return; // Exit the function if there are validation errors
+    }
+
+    // Configure your EmailJS settings
+    emailjs.init("fN9WKeWBKrW4bpIMW");
+
+    // Prepare the email parameters
+    var emailParams = {
+        to_email: "artqalaa@gmail.com", // Replace with your email
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message
+    };
+
+    // Send the email using EmailJS
+    emailjs.send("service_36czkli", "template_94zrpyd", emailParams)
+        .then(function (response) {
+            successMessage.textContent = "Message sent successfully!";
+            // Optionally, you can reset the form here
+        }, function (error) {
+            errorMessage.textContent = "An error occurred. Please try again later.";
+        });
+});
