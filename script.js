@@ -140,7 +140,7 @@ document.getElementById("message-form").addEventListener("submit", function (eve
     }
 
     // Configure your EmailJS settings
-    emailjs.init("fN9WKeWBKrW4bpIMW");
+    emailjs.init("dwZK-oSL9zBbuhqVM");
 
     // Prepare the email parameters
     var emailParams = {
@@ -152,7 +152,7 @@ document.getElementById("message-form").addEventListener("submit", function (eve
     };
 
     // Send the email using EmailJS
-    emailjs.send("service_36czkli", "template_94zrpyd", emailParams)
+    emailjs.send("service_ld04ftc", "template_94zrpyd", emailParams)
         .then(function (response) {
             successMessage.textContent = "Message sent successfully!";
             // Optionally, you can reset the form here
