@@ -115,6 +115,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
 document.getElementById("message-form").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent default form submission
 
@@ -140,7 +142,7 @@ document.getElementById("message-form").addEventListener("submit", function (eve
     }
 
     // Configure your EmailJS settings
-    emailjs.init("dwZK-oSL9zBbuhqVM");
+    emailjs.init("w2Mz_h4uxP9lUf0lW");
 
     // Prepare the email parameters
     var emailParams = {
