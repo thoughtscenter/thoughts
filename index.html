@@ -203,10 +203,12 @@
                             </div>
                             <div class="title">
                                 <h3>المجال الأسري</h3>
-
                             </div>
-
+                            <div class="brief">
+                                <p>يعنى بتقديم الدعم الارشادي والتوجيهي في جميع الجوانب ذات العلاقة بالمنظومة الأسرية والمساهمة بتنظيمها وترابطها</p>
+                            </div>
                         </div>
+                    
                         <div class="field animate-right">
                             <div class="icon">
                                 <img src="images/therapy.png" alt="">
@@ -214,7 +216,11 @@
                             <div class="title">
                                 <h3>المجال النفسي</h3>
                             </div>
+                            <div class="brief">
+                                <p>يعنى بتقديم الدعم النفسي وتقييم الاضطرابات النفسية للأطفال والبالغين والمراهقين وعلاجها من خلال ممارسات مستندة على الأدلة والبراهين العلمية</p>
+                            </div>
                         </div>
+                    
                         <div class="field animate-right">
                             <div class="icon">
                                 <img src="images/adaption.png" alt="">
@@ -222,7 +228,11 @@
                             <div class="title">
                                 <h3>المجال التربوي</h3>
                             </div>
+                            <div class="brief">
+                                <p>يعنى بتقديم الارشاد والتوجيه المستند على أسس علمية تساهم بتوفير بيئة امنة للأبناء العاديين وذوي الإعاقة وذلك من خلال استراتيجيات مثبتة الفعالية علمياً وعملياً</p>
+                            </div>
                         </div>
+                    
                         <div class="field animate-right">
                             <div class="icon">
                                 <img src="images/educate.png" alt="">
@@ -230,7 +240,12 @@
                             <div class="title">
                                 <h3>المجال السلوكي</h3>
                             </div>
+                            <div class="brief">
+                                <p>يعنى بتقديم الخدمات التقييمية والعلاجية للأفراد ذوي الإعاقة ممارسات سلوكية ذات جودة عالية وتحت اشراف مرخصين</p>
+                                <p>معتمدين في المجال السلوكي</p>
+                            </div>
                         </div>
+                    
                         <div class="field animate-right">
                             <div class="icon">
                                 <img src="images/research.png" alt="">
@@ -238,7 +253,11 @@
                             <div class="title">
                                 <h3>المجال البحثي</h3>
                             </div>
+                            <div class="brief">
+                                <p>يعنى بدعم وتوجيه الجهود البحثية للمهتمين وتوفير الأسس الداعمة والتي تساهم بإثراء المكتبة العلمية</p>
+                            </div>
                         </div>
+                    
                         <div class="field animate-right">
                             <div class="icon">
                                 <img src="images/workshop.png" alt="">
@@ -246,7 +265,11 @@
                             <div class="title">
                                 <h3>المجال التدريبي</h3>
                             </div>
+                            <div class="brief">
+                                <p>يعنى بتدريب وتأهيل المختصين والأسر والباحثين في المجالات ذات العلاقة وذلك عبر كفاءات مؤهلة ومتميزة</p>
+                            </div>
                         </div>
+                    
                         <div class="field animate-right">
                             <div class="icon">
                                 <img src="images/community.png" alt="">
@@ -254,8 +277,12 @@
                             <div class="title">
                                 <h3>المجال المجتمعي</h3>
                             </div>
+                            <div class="brief">
+                                <p>يعني بعقد الشراكات الفعالة مع جهات ومنشآت محلية ودولية متميزة تساعد في تجويد الخدمات وتحسين المخرجات</p>
+                            </div>
                         </div>
                     </div>
+                    
 
                 </div>
                 <div class="content">
@@ -442,20 +469,27 @@
 
                 </div>
                 <div class="right-side">
-                    <form action="/send-message" method="post">
+                    <form id="message-form" action="/send-message" method="post">
                         <label for="name">الاسم:</label>
                         <input type="text" id="name" name="name" required>
+                        <div class="error" id="name-error"></div>
 
                         <label for="email">الايميل:</label>
                         <input type="email" id="email" name="email" required>
+                        <div class="error" id="email-error"></div>
 
                         <label for="subject">العنوان:</label>
                         <input type="text" id="subject" name="subject" required>
+                        <div class="error" id="subject-error"></div>
 
                         <label for="message">الرسالة:</label>
                         <textarea id="message" name="message" required></textarea>
+                        <div class="error" id="message-error"></div>
 
                         <button type="submit">ارسال</button>
+
+                        <div class="message" id="success-message"></div>
+                        <div class="message" id="error-message"></div>
                     </form>
                 </div>
             </div>
