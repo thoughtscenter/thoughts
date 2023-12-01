@@ -435,7 +435,7 @@ header .book:hover {
   left: 50%;
   transform: translate(-50%, 0);
   width: 200px;
-  background-color: #eee;
+  background-color: #3979be0a;
   padding: 10px;
   border-radius: 8px;
   opacity: 0;
@@ -446,7 +446,7 @@ header .book:hover {
 
 .home .fields .field .brief p {
   font-size: .8rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1.2;
 }
 
