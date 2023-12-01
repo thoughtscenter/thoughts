@@ -358,9 +358,11 @@ header .book:hover {
   cursor: pointer;
   text-align: center;
 }
-.home .hero  p{
+
+.home .hero p {
   font-size: 1.3rem;
 }
+
 .home .hero>p {
   text-align: center;
 }
@@ -421,6 +423,37 @@ header .book:hover {
 
 .home .fields .cont {
   border-bottom: 1px solid #ddd;
+}
+
+.home .fields .field {
+  position: relative;
+}
+
+.home .fields .field .brief {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 200px;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 8px;
+  opacity: 0;
+  z-index: 0;
+  transition: 0.3s;
+  color: var(--text2-color);  
+}
+
+.home .fields .field .brief p {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: 1.2;
+}
+
+.home .fields .field:hover .brief {
+  top: -150px;
+  opacity: 1;
+  z-index: 99999999999999999999999999999999;
 }
 
 .home .icon {
@@ -506,7 +539,7 @@ header .book:hover {
   gap: 20px;
 }
 
-.home .content  .properties {
+.home .content .properties {
   width: 100%;
   display: flex;
   align-items: center;
@@ -514,13 +547,13 @@ header .book:hover {
 }
 
 
-.home .content  .properties >  div{
+.home .content .properties>div {
   height: 350px;
 }
 
 
 
-.home .content  .people {
+.home .content .people {
   display: flex;
   justify-content: space-between;
   align-items: center;
