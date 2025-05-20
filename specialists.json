@@ -48,30 +48,3 @@
       "brief": "ماجستير علم نفس عيادي / اكلينيكي..."
     }
   ];
-
-  const container = document.getElementById('container');
-
-  data.forEach(person => {
-    const card = document.createElement('div');
-    card.className = 'card';
-
-    const img = document.createElement('img');
-    img.src = person.imageSrc || 'https://via.placeholder.com/100'; // صورة بديلة لو فاضية
-
-    const info = document.createElement('div');
-    info.className = 'info';
-
-    info.innerHTML = `
-      <div class="name">${person.name}</div>
-      <div class="spec">${person.specialization}</div>
-      <div class="brief">${person.brief}</div>
-    `;
-
-    card.appendChild(img);
-    card.appendChild(info);
-    container.appendChild(card);
-  });
-</script>
-
-</body>
-</html>
